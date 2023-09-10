@@ -1,58 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Weather App</title>
-</head>
-
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analog Clock</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
     <div class="container">
-        <div class="search-box">
-            <i class="fa-solid fa-location-dot"></i>
-            <input type="text" placeholder="Enter your location">
-            <button class="fa-solid fa-magnifying-glass"></button>
+     
+        <div class="clock">
+        <label style="--i: 1"><span>I</span></label>
+        <label style="--i: 2"><span>II</span></label>
+        <label style="--i: 3"><span>3</span></label>
+        <label style="--i: 4"><span>IV</span></label>
+        <label style="--i: 5"><span>V</span></label>
+        <label style="--i: 6"><span>6</span></label>
+        <label style="--i: 7"><span>VII</span></label>
+        <label style="--i: 8"><span>VIII</span></label>
+        <label style="--i: 9"><span>9</span></label>
+        <label style="--i: 10"><span>X</span></label>
+        <label style="--i: 11"><span>XI</span></label>
+        <label style="--i: 12"><span>12</span></label>
+       
+       
+        <div class="indicator">
+          <span class="hand hour"></span>
+          <span class="hand minute"></span>
+          <span class="hand second"></span>
         </div>
-
-        <div class="not-found">
-            <img src="images/404.png">
-            <p>Oops! Invalid location :/</p>
-        </div>
-
-        <div class="weather-box">
-            <img src="">
-            <p class="temperature"></p>
-            <p class="description"></p>
-        </div>
-
-        <div class="weather-details">
-            <div class="humidity">
-                <i class="fa-solid fa-water"></i>
-                <div class="text">
-                    <span></span>
-                    <p>Humidity</p>
-                </div>
-            </div>
-            <div class="wind">
-                <i class="fa-solid fa-wind"></i>
-                <div class="text">
-                    <span></span>
-                    <p>Wind Speed</p>
-                </div>
-            </div>
-        </div>
-
+      </div>
+      <div class="mode-switch">Dark Mode</div>
     </div>
-
-    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
